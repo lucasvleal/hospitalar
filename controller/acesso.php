@@ -12,10 +12,10 @@
     $autenticar = mysqli_query($link,$sql);
     $total = mysqli_num_rows($autenticar);
 
-    if($total == 0){
-        die('Não existe saporra '. mysql_error());
+    if($total == 0){        
+        die('Não existe usuário '. mysql_error());
     } else{
-        echo "logou";
+        echo "LOGOU USUARIO!";
     }
 
    

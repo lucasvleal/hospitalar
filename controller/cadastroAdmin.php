@@ -11,17 +11,14 @@
 
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];
-    $nasc = $_POST['nasc'];
-    $sexo = $_POST['sexo'];
+    $codPS = $_POST['codPS'];    
 
-    $sql = "INSERT INTO usuario VALUES ";
-    $sql .= "('$nome', '$cpf', '$nasc', '$sexo', '$email', '$senha')"; 
+    $sql = "INSERT INTO user_admin VALUES ";
+    $sql .= "('$email', '$senha', '$codPS')"; 
     mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($link);
 
-    echo "Cliente cadastrado com sucesso!";
+    echo "Administrador cadastrado com sucesso!";
 ?>
 </body>
 </html>

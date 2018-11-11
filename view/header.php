@@ -21,7 +21,7 @@
 <body id="grad">
 	 <!-- Header -->
 	 <header class="navbar navbar-expand-lg hpNavBar">
-		  <a class="navbar-brand hpLogoNavBar" href="index.html">
+		  <a class="navbar-brand hpLogoNavBar" href="index.php">
 		  	<!--<img src="imgs/logoSombraBranca.png" width="150"  alt="">-->
 		  	<h3>HOSPITA<span class="spanLar">LAR</span></h3>
 		  </a>
@@ -33,7 +33,7 @@
 		      <a class="nav-item nav-link active hpTextNavBar aNavBar" href="index.php">INÍCIO <span class="sr-only">(current)</span></a>
 					<a class="nav-item nav-link hpTextNavBar aNavBar" href="qualProcurar.php">QUAL PS PROCURAR?</a>
 		      <a class="nav-item nav-link hpTextNavBar aNavBar" href="quemSomos.php">QUEM SOMOS</a>
-					<a class="nav-item nav-link hpTextNavBar aNavBar" href="acesso.php">ACESSO</a>		      
+					<a class="nav-item nav-link hpTextNavBar aNavBar" href="acesso.php">ACESSO</a>   
 		    </div>
 		  </div>
 	 </header>

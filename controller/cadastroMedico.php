@@ -9,19 +9,19 @@
 
     $link = mysqli_connect("localhost", "root", "", "hospitalar_web");
 
-    $email = $_POST['email'];
+    $email = $_POST['login'];
     $senha = $_POST['senha'];
     $nome = $_POST['nome'];
-    $cpf = $_POST['cpf'];
-    $nasc = $_POST['nasc'];
-    $sexo = $_POST['sexo'];
+    $CRM = $_POST['CRM'];
+    $espec = $_POST['espec'];
+    $codPS = $_POST['codPS'];
 
-    $sql = "INSERT INTO usuario VALUES ";
-    $sql .= "('$nome', '$cpf', '$nasc', '$sexo', '$email', '$senha')"; 
+    $sql = "INSERT INTO medico VALUES ";
+    $sql .= "('$nome', '$CRM', '$espec', '$codPS', '$email', '$senha')"; 
     mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($link);
 
-    echo "Cliente cadastrado com sucesso!";
+    echo "Médico cadastrado com sucesso!!";
 ?>
 </body>
 </html>
