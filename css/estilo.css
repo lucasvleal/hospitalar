@@ -1,0 +1,305 @@
+/*StyleSheet para a webpage do Hospitalar*/
+
+/*--------------ATRIB. PADROES----------*/
+html,body{
+	/*font-family: 'Montserrat', sans-serif;*/
+	/*font-family: 'Libre Baskerville', serif;*/
+	height: 100%;
+}
+
+a{	
+	color: white;
+	transition: 0.5s;
+}
+
+a:hover{
+	transition: 0.5s;
+	/*color: #C1D7EE;*/
+	color: #1C3687;
+	text-decoration: none;
+}
+
+i{
+	color: white;
+	margin: 7px;
+	transition: 0.5s;
+}
+
+i:hover{
+	transition: 0.5s;
+	color: #1C3687;
+}
+
+h3{
+	color: white;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h6{
+	margin-top: 10px;
+	color: white;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+	margin-top: 20px;
+	color: #1C3687;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+h1{
+	color: #1C3687;
+	font-size: 65px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	color: black;
+	text-align: justify;
+	margin-bottom: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input{
+	margin-right: 15px;
+	color: white;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+   font-size: 15px;   
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+   font-size: 15px;     
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+   font-size: 15px;     
+}
+
+:-ms-input-placeholder {  
+   color: white; 
+   font-size: 15px;    
+}
+
+
+/*--------------CLASSES-----------------*/
+.hpButton{
+	color: white;
+	border: 1px solid red;
+}
+
+.spanLar{
+	color: #0B2161;
+	font-weight: bold;
+}
+
+.aNavBar{	
+	margin-right: 5px;
+	font-family: 'Montserrat', sans-serif;
+	transition: 0.2s;
+
+}
+
+.aNavBar:hover{	
+	transition: 0s;	
+	border-bottom: 2.5px solid white;
+}
+
+.aNavBar:active{
+	color: #1C3687;
+}
+
+
+.hpNavBar{
+	min-height: 5rem;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.hpTextNavBar{
+	font-size: 15px;
+	
+	color: white;
+}
+
+.hpLogoNavBar{
+	padding-left: 10px;
+}
+
+.hpFooter{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.hpFooterBaixo{
+	background-color: rgba(0,0,0,0.4);
+	height: 60px;
+	padding-top: 20px;
+}
+
+.hpTextFooterUC{
+	color: white;
+	font-weight: bold;
+}
+
+.hpTextFooter{
+	color: white;
+}
+
+.formLocalizacao{
+	border: none;
+	border-bottom: 1px solid white;
+	background-color: transparent;
+	display: inline-block;
+}
+
+.btn{
+	background-color: white;	
+	color: #1C3687;
+	transition: 0.3s;
+	height: 30px;
+	width: 120px;
+	border-radius: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.btn:hover{
+	background-color: #1C3687;	
+	color: white;
+	transition: 0.3s;
+}
+
+.containerMeu{
+	margin: 20px 40px 20px 40px;
+}
+
+.custom-control-label{
+	color: white;
+}
+
+.maps{
+	margin: 15px 0px 15px 0px;
+}
+
+.btnBuscar{
+	width: 250px;
+	margin-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.divRadios{
+	margin-bottom: 20px;
+}
+
+.boxAcesso{
+	border: 1px solid rgba(255,255,255,0.25);
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.boxCadastro{
+	overflow: auto;
+}
+
+.meuLabel{
+	color: white;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.ntc{
+	color: white;
+	font-weight: bold;
+}
+
+.rowDireita{
+	border-left: 1px solid rgba(28, 54, 135, 0.15);
+}
+
+.headerAdmin{
+	background-color: rgb(37, 37, 37);
+	height: 100px;
+}
+
+.col-esq{
+	background-color: black;
+	height: 730px;
+}
+
+.col-dir{
+	background-color: rgba(0,0,0,0.4);
+	height: 730px;	
+}
+
+.menuAdmin{		
+	padding: 10px;
+	transition: 0.3s;	
+}
+
+.menuAdmin:hover{
+	/* box-shadow: 1px 1px 5px rgba(194, 220, 245,0.5); */
+	border-left: 5px solid rgba(236, 227, 227, 0.3);
+	transition: 0.3s;
+}
+
+.txtMenuAdmin{
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	margin-left: 20px;
+}
+
+.boxCadastroMed{
+	padding: 20px;
+	overflow: auto;
+}
+
+.boxLoginAdm{
+	width: 400px;
+	height: 250px;	
+	border: 1px solid #1C3687;
+	box-shadow: 2px 5px 10px grey;
+	border-radius: 10px;
+	/* background-color: #1affc6; */
+	padding: 20px;
+}
+
+.loginAdm{
+	color: #1C3687;
+	font-size: 40px; 
+	font-weight: bolder;
+	margin-right: 20px;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;	
+}
+
+.loginAdm:hover{
+	border-bottom: 5px solid #1C3687;
+	border-radius: 5px;
+	transition: .2s;
+}
+
+/*----------------IDs-------------------*/
+#grad {
+  background-image: linear-gradient(to right, #00bfff , #1affc6);
+}
+
+
+/*---------------MEDIA QUERIES------------------*/
+@media (min-width: 320px) and (max-width: 767px){
+	.col-esq{
+		height: 250px;
+	}
+}
