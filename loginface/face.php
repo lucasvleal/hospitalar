@@ -13,7 +13,7 @@ $fb = new Facebook\Facebook([
 ]);
 
 $helper = $fb->getRedirectLoginHelper();
-$login_url = $helper->getLoginUrl("http://localhost/hospitalar/hospitalar/view/acesso.php");
+$login_url = $helper->getLoginUrl("http://localhost/hospitalar/view/acesso.php");
 
 try{
 	$acessToken = $helper->getAccessToken();
