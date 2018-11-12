@@ -20,6 +20,12 @@
                         <div class="d-flex justify-content-center">                        
                             <button type="submit" class="btn">Logar</button>
                         </div>
+                        <div class="d-flex justify-content-center">
+                        <?php require '../loginface/face.php';?>                      
+                            <a href = "<?php echo $login_url; ?>" class="btn" style="width: 200px; margin-top: 10px;">Login com Facebook</a>
+                        </div>
+                        
+
                     </form>
                 </div>
             </div>

@@ -21,7 +21,7 @@
 <body id="grad">
 	 <!-- Header -->
 	 <header class="navbar navbar-expand-lg hpNavBar">
-		  <a class="navbar-brand hpLogoNavBar" href="index.html">
+		  <a class="navbar-brand hpLogoNavBar" href="index.php">
 		  	<!--<img src="imgs/logoSombraBranca.png" width="150"  alt="">-->
 		  	<h3>HOSPITA<span class="spanLar">LAR</span></h3>
 		  </a>
@@ -33,7 +33,16 @@
 		      <a class="nav-item nav-link active hpTextNavBar aNavBar" href="index.php">INÍCIO <span class="sr-only">(current)</span></a>
 					<a class="nav-item nav-link hpTextNavBar aNavBar" href="qualProcurar.php">QUAL PS PROCURAR?</a>
 		      <a class="nav-item nav-link hpTextNavBar aNavBar" href="quemSomos.php">QUEM SOMOS</a>
-					<a class="nav-item nav-link hpTextNavBar aNavBar" href="acesso.php">ACESSO</a>		      
+					<?php require '../loginface/face.php';?>
+					<?php if(isset($_SESSION['acess_token'])|| isset($_SESSION['nome'])):?>
+					<a class="nav-item nav-link hpTextNavBar aNavBar" href="agendamento.php">AGENDAMENTO</a>
+					<h4 class = "nav-item nav-link hpTextNavBar aNavBar" style = "font-size: 20px;" > Olá, <strong><?php echo $_SESSION['nome']?></strong> ! </h4><a class="nav-item nav-link hpTextNavBar aNavBar" href="../loginface/logout.php"> Logout </a>
+					<?php else:?>
+						<a class="nav-item nav-link hpTextNavBar aNavBar" href="acesso.php">ACESSO</a>
+					<?php endif;?>
+
+
+					<a class="nav-item nav-link hpTextNavBar aNavBar" href="acesso.php"></a>	      
 		    </div>
 		  </div>
 	 </header>
