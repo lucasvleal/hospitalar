@@ -20,7 +20,7 @@
 <body class="d-flex justify-content-center align-items-center">    
     <label for="inputLoginAdm" class="loginAdm">Login</label>
     <div class="boxLoginAdm ">
-        <form>
+        <form action="../controller/acessoAdmin.php" method="POST">
             <div class="form-group">
                 <label class="meuLabel" for="inputLoginAdm" style="color: #1C3687;">Email</label>
                 <input name="login" type="email" class="form-control" id="inputLoginAdm" aria-describedby="emailHelp" placeholder="exemplo@hospitalar.com">

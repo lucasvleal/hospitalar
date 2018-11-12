@@ -30,7 +30,7 @@
     <!-- Header -->
     <div class="headerAdmin row">
         <div class="col-md-2 d-flex justify-content-center align-items-center">
-            <span style="font-weight: bold;"><a href="index.html"> < INICIO</a></span>
+            <span style="font-weight: bold;"><a href="index.php"> < INICIO</a></span>
         </div>  
         <div class="col-md-10  d-flex justify-content-center align-items-center">
             <h3>HOSPITA<span class="spanLar">LAR</span></h3>
@@ -51,12 +51,16 @@
                     </div>
                     <div class="menuAdmin d-flex justify-content-center">
                         <img src="../imgs/icons8-adicionar-propriedade-50.png">&nbsp;
-                        <span class="txtMenuAdmin d-flex align-items-center"><a href="#addMed" data-toggle="collapse">Adicionar Médico</a></span>
+                        <span class="txtMenuAdmin d-flex align-items-center"><a href="#addPS" data-toggle="collapse">Adicionar Posto de Saúde</a></span>
+                    </div>
+                    <div class="menuAdmin d-flex justify-content-center">
+                        <img src="../imgs/icons8-adicionar-adm-50.png">&nbsp;
+                        <span class="txtMenuAdmin d-flex align-items-center"><a href="#addADM" data-toggle="collapse">Adicionar Administrador</a></span>
                     </div>
                     <div class="menuAdmin d-flex justify-content-center">
                         <img src="../imgs/icons8-atualizar2-50.png">&nbsp;
                         <span class="txtMenuAdmin d-flex align-items-center"><a href="#attPS" data-toggle="collapse">Atualizar Dados do PS</a></span>
-                    </div>                    
+                    </div>                                      
                 </div>
                 <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
                 <!-- <div class="">
@@ -65,132 +69,166 @@
             </div>
             <!-- /coluna da esquerda -->
 
-            <!-- coluna da direita ADD MED-->
-            <div class="col-md-9 col-dir boxCadastroMed collapsible collapse  " id="addMed">
-                <h3>Adicionar Médico</h3>
-                <div class="boxAcesso">
-                        <form>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputEmailCadastroMed">Email <span style="color: red;">*</span></label>
-                                <input type="email" class="form-control" id="inputEmailCadastroMed" aria-describedby="emailHelp" placeholder="exemplo@hospitalar.com">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputSenhaCadastroMed">Senha <span style="color: red;">*</span></label>
-                                <input type="password" class="form-control" id="inputSenhaCadastroMed" placeholder="******">
-                            </div>
-                            <div class="form-group">
-                                    <label class="meuLabel" for="inputNomeCadastroMed">Nome completo <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" id="inputNomeCadastroMed" aria-describedby="emailHelp" placeholder="Lucas Viani Leal">
+            <!-- campo da direita -->
+                <!-- coluna da direita ADD MED-->
+                <div class="col-md-9 col-dir boxCadastroMed collapsible collapse  " id="addMed">
+                    <h3>Adicionar Médico</h3>
+                    <div class="boxAcesso">
+                            <form method="POST" action="../controller/cadastroMedico.php">
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputEmailCadastroMed">Email <span style="color: red;">*</span></label>
+                                    <input name="login" type="email" class="form-control" id="inputEmailCadastroMed" aria-describedby="emailHelp" placeholder="exemplo@hospitalar.com">
                                 </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputCRMCadastroMed">CRM <span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputCRMCadastroMed" aria-describedby="emailHelp" placeholder="0000/SP">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputEspCadastroMed">Especialização<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputEspCadastroMed" aria-describedby="emailHelp" placeholder="Psiquiatra">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputCodPSCadastroMed">Código do Posto de Saúde que trabalha<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputCodPSCadastroMed" aria-describedby="emailHelp" placeholder="111">
-                            </div>                            
-                            <p style="color: white;"><span style="color: red;">*</span> - Campo obrigatório</p>
-    
-                            <div class="d-flex justify-content-center">                        
-                                <button type="submit" class="btn">Adicionar</button>
-                            </div>
-                        </form>
-                    </div>
-            </div>
-            <!-- /coluna da direita -->
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputSenhaCadastroMed">Senha <span style="color: red;">*</span></label>
+                                    <input name="senha" type="password" class="form-control" id="inputSenhaCadastroMed" placeholder="******">
+                                </div>
+                                <div class="form-group">
+                                        <label class="meuLabel" for="inputNomeCadastroMed">Nome completo <span style="color: red;">*</span></label>
+                                        <input name="nome" type="text" class="form-control" id="inputNomeCadastroMed" aria-describedby="emailHelp" placeholder="Lucas Viani Leal">
+                                    </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputCRMCadastroMed">CRM <span style="color: red;">*</span></label>
+                                    <input name="CRM" type="text" class="form-control" id="inputCRMCadastroMed" aria-describedby="emailHelp" placeholder="0000/SP">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputEspCadastroMed">Especialização<span style="color: red;">*</span></label>
+                                    <input name="espec" type="text" class="form-control" id="inputEspCadastroMed" aria-describedby="emailHelp" placeholder="Psiquiatra">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputCodPSCadastroMed">Código do Posto de Saúde que trabalha<span style="color: red;">*</span></label>
+                                    <input name="codPS" type="text" class="form-control" id="inputCodPSCadastroMed" aria-describedby="emailHelp" placeholder="111">
+                                </div>                            
+                                <p style="color: white;"><span style="color: red;">*</span> - Campo obrigatório</p>
+        
+                                <div class="d-flex justify-content-center">                        
+                                    <button type="submit" class="btn">Adicionar</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+                <!-- /coluna da direita -->
 
-             <!-- coluna da direita ADD PS-->
-             <div class="col-md-9 col-dir boxCadastroMed collapsible collapse  " id="addPS">
-                <h3>Adicionar Posto de Saúde</h3>
-                <div class="boxAcesso">
-                        <form>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputCodCadastroPS">Email <span style="color: red;">*</span></label>
-                                <input type="email" class="form-control" id="inputCodCadastroPS" placeholder="0011">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputNomeCadastroPS">Nome <span style="color: red;">*</span></label>
-                                <input type="password" class="form-control" id="inputNomeCadastroPS" placeholder="UPS - Localidade">
-                            </div>
-                            <div class="form-group">
-                                    <label class="meuLabel" for="inputRuaCadastroPS">Rua <span style="color: red;">*</span></label>
-                                    <input type="text" class="form-control" id="inputRuaCadastroPS" placeholder="Av. Manoel Goulart, Nº">
+                <!-- coluna da direita ADD PS-->
+                <div class="col-md-9 col-dir boxCadastroMed collapsible collapse  " id="addPS">
+                    <h3>Adicionar Posto de Saúde</h3>
+                    <div class="boxAcesso">
+                            <form method="POST" action="../controller/cadastroPS.php">
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputCodCadastroPS">Código <span style="color: red;">*</span></label>
+                                    <input name="cod" type="text" class="form-control" id="inputCodCadastroPS" placeholder="0011">
                                 </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputBairroCadastroPS">Bairro <span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputBairroCadastroPS" placeholder="Centro">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputCidadeCadastroPS">Cidade<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputCidadeCadastroPS" placeholder="Presidente Prudente">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputEstadoCadastroPS">Estado<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputEstadoCadastroPS" placeholder="São Paulo">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputTipoCadastroPS">Tipo do PS<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputTipoCadastroPS" placeholder="UPS">
-                            </div> 
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputTamFilaCadastroPS">Tamanho da Fila Inicial<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputTamFilaCadastroPS" placeholder="10">
-                            </div> 
-                            <div class="form-group">
-                                <label class="meuLabel" for="inputTempoMedCadastroPS">Tempo Médio de consulta<span style="color: red;">*</span></label>
-                                <input type="text" class="form-control" id="inputTempoMedCadastroPS" placeholder="15">
-                            </div>                            
-                            <p style="color: white;"><span style="color: red;">*</span> - Campo obrigatório</p>
-    
-                            <div class="d-flex justify-content-center">                        
-                                <button type="submit" class="btn">Adicionar</button>
-                            </div>
-                        </form>
-                    </div>
-            </div>
-            <!-- /coluna da direita -->
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputNomeCadastroPS">Nome <span style="color: red;">*</span></label>
+                                    <input name="nome" type="text" class="form-control" id="inputNomeCadastroPS" placeholder="UPS - Localidade">
+                                </div>
+                                <div class="form-group">
+                                        <label class="meuLabel" for="inputRuaCadastroPS">Rua <span style="color: red;">*</span></label>
+                                        <input name="rua" type="text" class="form-control" id="inputRuaCadastroPS" placeholder="Av. Manoel Goulart, Nº">
+                                    </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputBairroCadastroPS">Bairro <span style="color: red;">*</span></label>
+                                    <input name="bairro" type="text" class="form-control" id="inputBairroCadastroPS" placeholder="Centro">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputCidadeCadastroPS">Cidade<span style="color: red;">*</span></label>
+                                    <input name="cidade" type="text" class="form-control" id="inputCidadeCadastroPS" placeholder="Presidente Prudente">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputEstadoCadastroPS">Estado<span style="color: red;">*</span></label>
+                                    <input name="estado" type="text" class="form-control" id="inputEstadoCadastroPS" placeholder="São Paulo">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputTipoCadastroPS">Tipo do PS<span style="color: red;">*</span></label>
+                                    <input name="tipo" type="text" class="form-control" id="inputTipoCadastroPS" placeholder="UPS">
+                                </div> 
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputTamFilaCadastroPS">Tamanho da Fila Inicial<span style="color: red;">*</span></label>
+                                    <input name="tamFila" type="text" class="form-control" id="inputTamFilaCadastroPS" placeholder="10">
+                                </div> 
+                                <div class="form-group">
+                                    <label class="meuLabel" for="inputTempoMedCadastroPS">Tempo Médio de consulta<span style="color: red;">*</span></label>
+                                    <input name="tempoMedio" type="text" class="form-control" id="inputTempoMedCadastroPS" placeholder="15">
+                                </div>                            
+                                <p style="color: white;"><span style="color: red;">*</span> - Campo obrigatório</p>
+        
+                                <div class="d-flex justify-content-center">                        
+                                    <button type="submit" class="btn">Adicionar</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+                <!-- /coluna da direita -->
 
-            <!--coluna da direita ATT PS-->
-            <div class="col-md-9 col-dir boxCadastroMed collapse show" id="attPS">
-                <h3>Atualizar Posto de Saúde</h3>
-                <div class="boxAcesso">
-                        <form>
-                            <div class="form-group">
-                                <label class="meuLabel" for="nomeAttPS">Nome</label>
-                                <input type="text" class="form-control" id="nomeAttPS" placeholder="UPS - Jequitibás">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="ruaAttPS">Rua</label>
-                                <input type="text" class="form-control" id="ruaAttPS" placeholder="José Kempe, Nº">
-                            </div>
-                            <div class="form-group">
-                                    <label class="meuLabel" for="bairroAttPS">Bairro</label>
-                                    <input type="text" class="form-control" id="bairroAttPS" placeholder="Jequitibás II">
+                <!--coluna da direita ATT PS-->
+                <div class="col-md-9 col-dir boxCadastroMed collapse show" id="attPS">
+                    <h3>Atualizar Posto de Saúde</h3>
+                    <div class="boxAcesso">
+                            <form method="POST" action="../controller/atualizaPS.php">
+                                <div class="form-group">
+                                    <label class="meuLabel" for="codAttPS">Código</label>
+                                    <input name="codPS" type="text" class="form-control" id="codAttPS" placeholder="0011">
                                 </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="tipoAttPS">Tipo do PS</label>
-                                <input type="text" class="form-control" id="tipoAttPS" placeholder="UPS">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="filaAttPS">Tamanho da Fila no momento</label>
-                                <input type="text" class="form-control" id="filaAttPS"  placeholder="15">
-                            </div>
-                            <div class="form-group">
-                                <label class="meuLabel" for="tempoMedioAttPS">Tempo Médio</label>
-                                <input type="text" class="form-control" id="tempoMedioAttPS"  placeholder="25">
-                            </div>                            
-    
-                            <div class="d-flex justify-content-center">                        
-                                <button type="submit" class="btn">Atualizar</button>
-                            </div>
-                        </form>
-                    </div> 
-            </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="nomeAttPS">Nome</label>
+                                    <input name="nome" type="text" class="form-control" id="nomeAttPS" placeholder="UPS - Jequitibás">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="ruaAttPS">Rua</label>
+                                    <input name="rua" type="text" class="form-control" id="ruaAttPS" placeholder="José Kempe, Nº">
+                                </div>
+                                <div class="form-group">
+                                        <label class="meuLabel" for="bairroAttPS">Bairro</label>
+                                        <input name="bairro" type="text" class="form-control" id="bairroAttPS" placeholder="Jequitibás II">
+                                    </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="tipoAttPS">Tipo do PS</label>
+                                    <input name="tipo" type="text" class="form-control" id="tipoAttPS" placeholder="UPS">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="filaAttPS">Tamanho da Fila no momento</label>
+                                    <input name="tamFila" type="text" class="form-control" id="filaAttPS"  placeholder="15">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="tempoMedioAttPS">Tempo Médio</label>
+                                    <input name="tempoMedio" type="text" class="form-control" id="tempoMedioAttPS"  placeholder="25">
+                                </div>                            
+        
+                                <div class="d-flex justify-content-center">                        
+                                    <button type="submit" class="btn">Atualizar</button>
+                                </div>
+                            </form>
+                        </div> 
+                </div>
+
+                <!-- coluna da direita ADD ADM-->
+                <div class="col-md-9 col-dir boxCadastroMed collapsible collapse  " id="addADM">
+                    <h3>Adicionar Administrador</h3>
+                    <div class="boxAcesso">
+                            <form action="../controller/cadastroAdmin.php" method="POST">
+                                <div class="form-group">
+                                    <label class="meuLabel" for="LoginCadADM">Email <span style="color: red;">*</span></label>
+                                    <input name="email" type="email" class="form-control" id="LoginCadADM" placeholder="exemplo@exemplo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label class="meuLabel" for="SenhaCadADM">Senha <span style="color: red;">*</span></label>
+                                    <input name="senha" type="password" class="form-control" id="SenhaCadADM" placeholder="******">
+                                </div>
+                                <div class="form-group">
+                                        <label class="meuLabel" for="CodPS_ADM">Código do PS <span style="color: red;">*</span></label>
+                                        <input name="codPS" type="text" class="form-control" id="CodPS_ADM" placeholder="0011">
+                                </div>
+                                                        
+                                <p style="color: white;"><span style="color: red;">*</span> - Campo obrigatório</p>
+        
+                                <div class="d-flex justify-content-center">                        
+                                    <button type="submit" class="btn">Adicionar</button>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+                <!-- /coluna da direita -->
+            <!-- /campo da direita -->
         </div>
     </div>
     <!-- /Container -->
