@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
@@ -16,10 +17,18 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<!-- CDN Popper-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    
+    
 </head>
 <body class="d-flex justify-content-center align-items-center">    
     <label for="inputLoginAdm" class="loginAdm">Login</label>
-    <div class="boxLoginAdm ">
+    
+    <div class="alert alert-danger divErro" role="alert" id="erro">
+            Erro no Login!
+    </div>
+
+    <div class="boxLoginAdm ">        
         <form action="../controller/acessoAdmin.php" method="POST">
             <div class="form-group">
                 <label class="meuLabel" for="inputLoginAdm" style="color: #1C3687;">Email</label>
@@ -34,6 +43,17 @@
                 <button type="submit" class="btn">Logar</button>
             </div>
         </form>
-    </div>    
+    </div>
+
+        <?php if(isset($_SESSION['msgErro'])) { ?>
+            <?php if($_SESSION['msgErro'] == 1) { ?> 
+                <script>
+                    // alert("Err");
+                    $('.divErro').css({'display':'block', });
+                    // $('.boxLoginAdm').css({'border': '1px solid tomato;',});
+                </script>
+            <?php } ?>
+        <?php } ?>
+    
 </body>
 </html>

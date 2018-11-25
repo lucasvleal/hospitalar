@@ -17,9 +17,9 @@
 	 			</p>
 
 	 			<div class="d-flex justify-content-center">
-	 				<a href="https://www.instagram.com/giovanniluro/" target="_blank">@Giovanni Luro </a> 
-	 				<span style="color: white;">&nbsp; &amp; &nbsp;  </span> 
-	 				<a href="https://www.instagram.com/lealdad_/" target="_blank"> @Lucas Leal</a>
+	 				<a href="https://www.instagram.com/giovanniluro/" target="_blank" class="terciaryColor">@Giovanni Luro </a> 
+	 				<span style=";">&nbsp; &amp; &nbsp;  </span> 
+	 				<a href="https://www.instagram.com/lealdad_/" target="_blank" class="terciaryColor"> @Lucas Leal</a>
 	 			</div>
 
 	 			<h1>Nossos Objetivos</h1>
