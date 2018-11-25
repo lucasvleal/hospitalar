@@ -4,7 +4,7 @@
 
     <script>
       var customLabel = {
-        restaurant: {
+        hospital: {
           label: 'R'
         },
         bar: {
