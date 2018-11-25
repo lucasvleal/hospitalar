@@ -58,7 +58,7 @@
 								<label class="custom-control-label" for="1">Particular</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="0" value="2" name="customRadio3" class="custom-control-input">
+								<input type="radio" id="0" value="0" name="customRadio3" class="custom-control-input">
 								<label class="custom-control-label" for="0">Público</label>
 							</div>
 						</div>
