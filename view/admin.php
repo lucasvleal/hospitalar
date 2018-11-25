@@ -46,13 +46,13 @@
     </div>
 
         <?php if(isset($_SESSION['msgErro'])) { ?>
-            <?php if($_SESSION['msgErro'] == 1) { ?> 
+            
                 <script>
-                    // alert("Err");
+                    
                     $('.divErro').css({'display':'block', });
-                    // $('.boxLoginAdm').css({'border': '1px solid tomato;',});
+                   
                 </script>
-            <?php } ?>
+                <?php session_destroy()?>
         <?php } ?>
     
 </body>

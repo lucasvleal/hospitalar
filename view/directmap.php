@@ -1,6 +1,9 @@
 <?php
 require 'conmaps.php';
-session_start();
+if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 $cid = $_POST['cid'];
 $end = $_POST['end'];
 $uf = $_POST['uf'];

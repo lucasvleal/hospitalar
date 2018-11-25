@@ -363,6 +363,13 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 	display: none;
 }
 
+.Weslley{
+	display: none;
+}
+
+.Erro{
+	display: none;
+}
 .containerAgenda{
 	margin-top: 20px;
 	padding: 0px 40px;

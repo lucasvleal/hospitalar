@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<?php if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+?>
 <head>
+    <?php require 'conmaps.php' ?>
 	<meta charset="utf-8">
 	<title>Hospitalar - Admin</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
@@ -119,32 +125,28 @@
                             <div class="boxAcesso">
                                     <form method="POST" action="../controller/atualizaPS.php">
                                         <div class="form-group">
-                                            <label class="meuLabel" for="codAttPS">Código</label>
-                                            <input name="codPS" type="text" class="form-control" id="codAttPS" placeholder="0011">
-                                        </div>
-                                        <div class="form-group">
                                             <label class="meuLabel" for="nomeAttPS">Nome</label>
-                                            <input name="nome" type="text" class="form-control" id="nomeAttPS" placeholder="UPS - Jequitibás">
+                                            <input name="nome" type="text" class="form-control" id="nomeAttPS" value="<?php echo $_SESSION['nomehosp'];?>">
                                         </div>
                                         <div class="form-group">
                                             <label class="meuLabel" for="ruaAttPS">Rua</label>
-                                            <input name="rua" type="text" class="form-control" id="ruaAttPS" placeholder="José Kempe, Nº">
+                                            <input name="rua" type="text" class="form-control" id="ruaAttPS" value="<?php echo $_SESSION['rua'];?>">
                                         </div>
                                         <div class="form-group">
                                                 <label class="meuLabel" for="bairroAttPS">Bairro</label>
-                                                <input name="bairro" type="text" class="form-control" id="bairroAttPS" placeholder="Jequitibás II">
+                                                <input name="bairro" type="text" class="form-control" id="bairroAttPS" value = "<?php echo $_SESSION['bairro'];?>">
                                             </div>
                                         <div class="form-group">
                                             <label class="meuLabel" for="tipoAttPS">Tipo do PS</label>
-                                            <input name="tipo" type="text" class="form-control" id="tipoAttPS" placeholder="UPS">
+                                            <input name="tipo" type="text" class="form-control" id="tipoAttPS" value = "<?php echo $_SESSION['tipo_ps'];?>">
                                         </div>
                                         <div class="form-group">
                                             <label class="meuLabel" for="filaAttPS">Tamanho da Fila no momento</label>
-                                            <input name="tamFila" type="text" class="form-control" id="filaAttPS"  placeholder="15">
+                                            <input name="tamFila" type="text" class="form-control" id="filaAttPS"  value = "<?php echo $_SESSION['fila_ps'];?>">
                                         </div>
                                         <div class="form-group">
                                             <label class="meuLabel" for="tempoMedioAttPS">Tempo Médio</label>
-                                            <input name="tempoMedio" type="text" class="form-control" id="tempoMedioAttPS"  placeholder="25">
+                                            <input name="tempoMedio" type="text" class="form-control" id="tempoMedioAttPS"  value = "<?php echo $_SESSION['tempo_med_atend'];?>">
                                         </div>                            
                 
                                         <div class="d-flex justify-content-center">                        
