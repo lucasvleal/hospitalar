@@ -18,16 +18,20 @@
     $autenticar = mysqli_query($link,$sql);
     $total = mysqli_num_rows($autenticar);
 
-    if($total == 0){
-        die('Não existe saporra ');
-    } else{
-        $dados = mysqli_fetch_array($autenticar,MYSQLI_ASSOC);
-        $_SESSION['nome'] = $dados['nome'];
-        $_SESSION['login'] = 1;
-        header("Location:../view/index.php");
+    if($email == "" && $senha == ""){
+        echo "<script>alert(Insira um email e uma senha!!);</script>";
+    }else if($email == "" || $senha == ""){
+        echo "<script>alert(Insira ambos os campos!!);</script>";
+    }else{
+        if($total == 0){
+            echo "<script>alert(Erro no login!!);</script>";
+        } else{
+            $dados = mysqli_fetch_array($autenticar,MYSQLI_ASSOC);
+            $_SESSION['nome'] = $dados['nome'];
+            $_SESSION['login'] = 1;
+            header("Location:../view/index.php");
+        }
     }
-
-
    
 ?>
 </body>

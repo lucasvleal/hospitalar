@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> 
 
-	<script src="bootstrap.js"></script>
+	<script src="../js/bootstrap.js"></script>
 
 	<!-- CDN Jquery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
 					<?php require '../loginface/face.php';?>
 					<?php if(isset($_SESSION['acess_token'])|| isset($_SESSION['nome'])):?>
 					<a class="nav-item nav-link hpTextNavBar aNavBar" href="agendamento.php">AGENDAMENTO</a>
-					<h4 class = "nav-item nav-link hpTextNavBar aNavBar" style = "font-size: 20px;" > Olá, <strong><?php echo $_SESSION['nome']?></strong> ! </h4><a class="nav-item nav-link hpTextNavBar aNavBar" href="../loginface/logout.php"> Logout </a>
+					<h4 class = "nav-item nav-link hpTextNavBar " style = "font-size: 20px;cursor:default;" > Olá, <strong><?php echo $_SESSION['nome']?></strong> ! </h4><a class="nav-item nav-link hpTextNavBar aNavBar" href="../loginface/logout.php"> Logout </a>
 					<?php else:?>
 						<a class="nav-item nav-link hpTextNavBar aNavBar" href="acesso.php">ACESSO</a>
 					<?php endif;?>
