@@ -18,10 +18,8 @@
     $total = mysqli_num_rows($autenticar);
 
     if($total == 0){
-        // echo "<script>alert(Erro no login!!);</script>";
         
-        $erro = "<script>alert('Erro no Login'); </script>";
-        $_SESSION['msgErro'] = 0;        
+        $_SESSION['msgErro'] = "VAI TOMA NO CU";        
         header("Location: ../view/admin.php");         
     } else{
         $dados = mysqli_fetch_array($autenticar,MYSQLI_ASSOC);
