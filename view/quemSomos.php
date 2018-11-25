@@ -5,7 +5,7 @@
 	 	<!-- ROW 1 -->
 	 	<div class="row align-items-start">
 	 		<!-- Col 1-->
-	 		<div class="col-12">
+	 		<div class="col-md-12 col-sm-12">
 	 			<h1>Quem Somos?</h1>
 	 			<p >
 	 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -21,7 +21,7 @@
 	 				<span style=";">&nbsp; &amp; &nbsp;  </span> 
 	 				<a href="https://www.instagram.com/lealdad_/" target="_blank" class="terciaryColor"> @Lucas Leal</a>
 	 			</div>
-
+				<br>
 	 			<h1>Nossos Objetivos</h1>
 	 			<p >
 	 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

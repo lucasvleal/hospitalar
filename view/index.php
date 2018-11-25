@@ -6,13 +6,13 @@
 	 	<!-- ROW 1 -->
 	 	<div class="row align-items-start">
 	 		<!-- Col 1-->
-			 <div class="col-8" style = "padding: 0px;">
+			 <div class="col-md-8 col-sm-12" style = "padding: 0px;">
 			 	<h3 class="secundaryColor">Mapa de Rota</h3>
 	 			<div class="map">
 					<?php if(isset($_SESSION['org'])):?>
 					<?php require 'directmapexib.php'?>
 					<?php else:?>		
-					<iframe src = "maps.php" style = "width:100%;height:700px; border:none;"></iframe>
+					<iframe src = "maps.php" style = "width:100%;height:450px; border:none;"></iframe>
 					<?php endif;?>					
 				</div>
 
@@ -20,7 +20,7 @@
 	 		<!-- /col 1-->
 
 	 		<!-- Col 2 -->
-	 		<div class="col-4">
+	 		<div class="col-md-4 col-sm-12">
 			<h3 class="secundaryColor">Formulário de Busca</h3>
 			 <form method="POST" action="directmap.php">				  				    
 				    <input type="text" class="formLocalizacao" aria-describedby="endereçoHelp" placeholder="ENDEREÇO ATUAL" name="end" id="end">				  				    

@@ -21,7 +21,7 @@
     
     
 </head>
-<body class="d-flex justify-content-center align-items-center">    
+<body class="d-flex justify-content-center align-items-center col-md-12 col-sm-12">    
     <label for="inputLoginAdm" class="loginAdm">Login</label>
     
     <div class="alert alert-danger divErro" role="alert" id="erro">
