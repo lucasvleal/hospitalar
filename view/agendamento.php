@@ -42,9 +42,13 @@
         $date = $ym . '-' . $day;
         
         if ($today == $date) {
-            $week .= '<td class="hoje">' . $day;
+            $week .= '<td class="hoje marcavel">' . $day;
         } else {
-            $week .= '<td>' . $day;
+            if($today < $date){
+                $week .= '<td class="marcavel futuro">' . $day;
+            }else{
+                $week .= '<td>' . $day;
+            }     
         }
         $week .= '</td>';
         
@@ -86,4 +90,12 @@
             ?>
     </table>
 </div>
+
+<script>
+    $(".marcavel").on('click', function() {
+            window.location.href = "marcar.php";        
+    });
+   
+
+</script>
 <?php require 'footer.php'; ?>
