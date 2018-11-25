@@ -4,11 +4,14 @@
 
     <script>
       var customLabel = {
-        restaurant: {
-          label: 'R'
+        hospital: {
+          label: 'H'
         },
-        bar: {
-          label: 'B'
+        ps: {
+          label: 'PS'
+        },
+        upa: {
+          label:'U'
         }
       };
 
