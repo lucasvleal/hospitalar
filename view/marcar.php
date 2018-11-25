@@ -41,7 +41,7 @@
 
             <!-- <div class="horarioMarcar"> -->
             <div class="col-md-8 col-sm-12 horarioMarcar">
-                <h3 class="secundaryColor">Nome do Médico</h3>
+                <h3 class="secundaryColor nomeMedico">Nome do Médico</h3>
                 <h3>Escolha o horário</h3>
                 <form>                    <select class="custom-select">
                         <option selected>Open this select menu</option>
