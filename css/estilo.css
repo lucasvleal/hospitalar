@@ -68,6 +68,7 @@ p{
 input{
 	margin-right: 15px;
 	color: white;
+	width: 85%;
 }
 
 ::-webkit-input-placeholder {
@@ -103,6 +104,10 @@ td{
 	background-color: white;
 }
 
+td:hover{
+	background-color: rgb(223, 226, 231);
+}
+
 th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 	color: tomato;
 }
@@ -136,7 +141,6 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 
 .hpButton{
 	color: white;
-	border: 1px solid red;
 }
 
 .spanLar{
@@ -192,14 +196,17 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 }
 
 .hpTextFooter{
-	color: white;
+	color: white;	
 }
 
 .formLocalizacao{
 	border: none;
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid white;
 	background-color: transparent;
 	display: inline-block;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;	
 }
 
 .btn{
@@ -255,7 +262,7 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 }
 
 .boxCadastro{
-	overflow: scroll;
+	overflow: auto;
 }
 
 .meuLabel{
@@ -356,9 +363,17 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 	display: none;
 }
 
+.Weslley{
+	display: none;
+}
+
+.Erro{
+	display: none;
+}
 .containerAgenda{
-	margin-top: 80px;
-	padding: 20px 50px;
+	margin-top: 20px;
+	padding: 0px 40px;
+	margin-bottom: 25px;
 }
 
 .hoje{
@@ -387,5 +402,29 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 @media (min-width: 320px) and (max-width: 767px){
 	.col-esq{
 		height: 250px;
+	}
+
+	.hpTextFooter{
+		text-align: center;
+	}
+
+	h1{
+		font-size: 50px;
+	}
+
+	.h1Agenda{
+		font-size: 30px;
+	}
+
+	.rowDireita{
+		border-top: 1px dotted rgba(28, 54, 135, 0.15);
+		border-left: none;
+		padding-top: 15px;
+	}
+
+	.aNavBar:hover{
+		background-color: rgba(236, 227, 227, 0.3);
+		border-radius: 10px;
+		padding-left: 10px;
 	}
 }

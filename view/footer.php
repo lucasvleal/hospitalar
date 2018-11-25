@@ -26,16 +26,16 @@
         <h5 class="text-uppercase hpTextFooterUC">Mapa do Site</h5>
         <ul class="list-unstyled hpTextFooter">
           <li>
-            <a href="#!">Inicio</a>
+            <a href="index.php">Inicio</a>
           </li>
           <li>
-            <a href="#!">Agendamento</a>
+            <a href="acesso.php">Acesso</a>
           </li>
           <li>
-            <a href="#!">PS Certo</a>
+            <a href="qualProcurar.php">PS Certo</a>
           </li>
           <li>
-            <a href="#!">Quem Somos</a>
+            <a href="quemSomos.php">Quem Somos</a>
           </li>
         </ul>
     </div>

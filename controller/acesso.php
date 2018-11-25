@@ -13,18 +13,20 @@
     $email = $_POST['login'];
     $senha = $_POST['senha'];
 
+    
+
     $sql = "SELECT login,senha,nome FROM usuario WHERE login ='$email'  AND senha = '$senha' ";
     
     $autenticar = mysqli_query($link,$sql);
     $total = mysqli_num_rows($autenticar);
 
-    if($email == "" && $senha == ""){
-        echo "<script>alert(Insira um email e uma senha!!);</script>";
-    }else if($email == "" || $senha == ""){
-        echo "<script>alert(Insira ambos os campos!!);</script>";
+    if($email == "" || $senha == ""){
+       $_SESSION['erroAcesso'] = 1;
+       header("Location:../view/acesso.php");
     }else{
         if($total == 0){
-            echo "<script>alert(Erro no login!!);</script>";
+            $_SESSION['erroAcesso'] = 0;
+            header("Location:../view/acesso.php");
         } else{
             $dados = mysqli_fetch_array($autenticar,MYSQLI_ASSOC);
             $_SESSION['nome'] = $dados['nome'];

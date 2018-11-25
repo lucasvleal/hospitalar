@@ -68,14 +68,7 @@
                     <a id="v-pills-addAdm-tab" role="tab" data-toggle="pill" aria-controls="addAdm" aria-selected="false" class="nav-link linkAdm secundaryColor-hover" href="#addADM">
                         Adicionar Administrador
                     </a>
-
-                    <div class="menuAdmin d-flex justify-content-center">
-                        <img src="../imgs/icons8-atualizar2-50.png">&nbsp;
-                        
-                    </div>
-                    <a id="v-pills-attPS-tab" role="tab" data-toggle="pill" aria-controls="attPS" aria-selected="false" class="nav-link linkAdm secundaryColor-hover" href="#attPS">
-                        Atualizar Dados do PS
-                    </a>                                   
+           
                 </div>
                 <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
                 <!-- <div class="">
@@ -159,8 +152,8 @@
                                             <input name="cidade" type="text" class="form-control" id="inputCidadeCadastroPS" placeholder="Presidente Prudente">
                                         </div>
                                         <div class="form-group">
-                                            <label class="meuLabel" for="inputEstadoCadastroPS">Estado<span style="color: red;">*</span></label>
-                                            <input name="estado" type="text" class="form-control" id="inputEstadoCadastroPS" placeholder="São Paulo">
+                                            <label class="meuLabel" for="inputEstadoCadastroPS">UF<span style="color: red;">*</span></label>
+                                            <input name="estado" type="text" class="form-control" id="inputEstadoCadastroPS" placeholder="SP">
                                         </div>
                                         <div class="form-group">
                                             <label class="meuLabel" for="inputTipoCadastroPS">Tipo do PS<span style="color: red;">*</span></label>
@@ -173,9 +166,27 @@
                                         <div class="form-group">
                                             <label class="meuLabel" for="inputTempoMedCadastroPS">Tempo Médio de consulta<span style="color: red;">*</span></label>
                                             <input name="tempoMedio" type="text" class="form-control" id="inputTempoMedCadastroPS" placeholder="15">
-                                        </div>                            
+                                        </div>         
+
+                                        <div class="form-group">
+                                            <label class="meuLabel" for="inputParticular">Particular(1-Sim/0-Não) <span style="color: red;">*</span></label>
+                                            <input name="particular" type="text" class="form-control" id="inputParticular" placeholder="0 ou 1">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="meuLabel" for="inputLat">Latitude <span style="color: red;">*</span></label>
+                                            <input name="lat" type="text" class="form-control" id="inputLat" placeholder="22.423123">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="meuLabel" for="inputLong">Longitude <span style="color: red;">*</span></label>
+                                            <input name="long" type="text" class="form-control" id="inputLong" placeholder="54.123565">
+                                        </div>
+
                                         <p style="color: white;"><span style="color: red;">*</span> - Campo obrigatório</p>
-                
+            
+                                        
+
                                         <div class="d-flex justify-content-center">                        
                                             <button type="submit" class="btn">Adicionar</button>
                                         </div>
@@ -183,48 +194,6 @@
                                 </div>
                         </div>
                         <!-- /coluna da direita -->
-
-                        <!--coluna da direita ATT PS-->
-                        <div class="tab-pane fade boxCadastroMed" role="tabpanel" aria-labelledby="v-pills-attPS-tab" id="attPS">
-                            <h3>Atualizar Posto de Saúde</h3>
-                            <div class="boxAcesso">
-                                    <form method="POST" action="../controller/atualizaPS.php">
-                                        <div class="form-group">
-                                            <label class="meuLabel" for="codAttPS">Código</label>
-                                            <input name="codPS" type="text" class="form-control" id="codAttPS" placeholder="0011">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="meuLabel" for="nomeAttPS">Nome</label>
-                                            <input name="nome" type="text" class="form-control" id="nomeAttPS" placeholder="UPS - Jequitibás">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="meuLabel" for="ruaAttPS">Rua</label>
-                                            <input name="rua" type="text" class="form-control" id="ruaAttPS" placeholder="José Kempe, Nº">
-                                        </div>
-                                        <div class="form-group">
-                                                <label class="meuLabel" for="bairroAttPS">Bairro</label>
-                                                <input name="bairro" type="text" class="form-control" id="bairroAttPS" placeholder="Jequitibás II">
-                                            </div>
-                                        <div class="form-group">
-                                            <label class="meuLabel" for="tipoAttPS">Tipo do PS</label>
-                                            <input name="tipo" type="text" class="form-control" id="tipoAttPS" placeholder="UPS">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="meuLabel" for="filaAttPS">Tamanho da Fila no momento</label>
-                                            <input name="tamFila" type="text" class="form-control" id="filaAttPS"  placeholder="15">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="meuLabel" for="tempoMedioAttPS">Tempo Médio</label>
-                                            <input name="tempoMedio" type="text" class="form-control" id="tempoMedioAttPS"  placeholder="25">
-                                        </div>                            
-                
-                                        <div class="d-flex justify-content-center">                        
-                                            <button type="submit" class="btn">Atualizar</button>
-                                        </div>
-                                    </form>
-                                </div> 
-                        </div>
-
                         <!-- coluna da direita ADD ADM-->
                         <div class="tab-pane fade boxCadastroMed  " role="tabpanel" aria-labelledby="v-pills-addADM-tab" id="addADM">
                             <h3>Adicionar Administrador</h3>

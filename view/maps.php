@@ -1,14 +1,17 @@
 
-    <div id="map" style = "height: 700px;
+    <div id="map" style = "height: 432px;
         width: 100%;margin: 0px; padding: 0px; border:none;"></div>
 
     <script>
       var customLabel = {
         hospital: {
-          label: 'R'
+          label: 'H'
         },
-        bar: {
-          label: 'B'
+         postosaúde: {
+          label: 'P'
+        },
+        upa: {
+          label:'U'
         }
       };
 

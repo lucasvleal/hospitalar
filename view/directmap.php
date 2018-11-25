@@ -1,6 +1,9 @@
 <?php
 require 'conmaps.php';
-session_start();
+if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 $cid = $_POST['cid'];
 $end = $_POST['end'];
 $uf = $_POST['uf'];
@@ -8,9 +11,6 @@ $r1 = $_POST['customRadio'];
 $r2 = $_POST['customRadio2'];
 $r3 = $_POST['customRadio3'];
 
-echo $r1;
-echo $r2;
-echo $r3;
 
 $query = "SELECT rua,bairro,cidade,estado FROM posto_saude WHERE particular = '$r3' and tipo_ps = '$r2' ORDER BY '$r1' DESC
 ";

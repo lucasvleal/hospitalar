@@ -62,8 +62,11 @@
 
 ?>
 
-<div class="containerAgenda">
-    <h1>Calendário para agendamentos. </h1>
+<div class=" containerAgenda col-md-12 col-sm-12">
+    <h1 class="h1Agenda">Calendário para agendamentos. </h1>
+    <p style="color: white">
+        Escolha o dia desejado para o agendamento de sua consulta.
+    </p>
     <h3><a href="?ym=<?php echo $prev; ?>">&lt;</a> <?php echo $html_title; ?> <a href="?ym=<?php echo $next; ?>">&gt;</a></h3>
     <br />
     <table class="table table-bordered agenda">

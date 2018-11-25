@@ -7,6 +7,11 @@
             <div class="col-md-6">
                 <h1>Login</h1>
                 <div class="boxAcesso ">
+                <div class="alert alert-danger Erro" role="alert">
+                    Login ou senha inválidos!
+                 </div><div class="alert alert-danger Weslley" role="alert" >
+                    Preencha os campos!
+                </div>
                     <form method="POST" action="../controller/acesso.php">
                         <div class="form-group">
                             <label class="meuLabel" for="inputEmailLogin">Email</label>
@@ -78,4 +83,23 @@
      </div>
      <!-- /Container -->
 
+    <?php if($_SESSION['erroAcesso'] == 1) { ?>
+            
+            <script>
+                
+                $('.Weslley').css({'display':'block', });
+               
+            </script>
+            <?php $_SESSION['erroAcesso'] = 3;?>
+    <?php } ?>
+
+    <?php if($_SESSION['erroAcesso'] == 0) { ?>
+            
+            <script>
+                
+                $('.Erro').css({'display':'block', });
+               
+            </script>
+            <?php $_SESSION['erroAcesso'] = 3;?>
+    <?php } ?>
 <?php require 'footer.php'; ?>
