@@ -27,5 +27,6 @@
 
     echo "Cliente cadastrado com sucesso!";
 ?>
+<a href="../view/acesso.php"><br>Voltar</a>
 </body>
 </html>

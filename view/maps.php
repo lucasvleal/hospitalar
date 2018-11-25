@@ -7,8 +7,8 @@
         hospital: {
           label: 'H'
         },
-        ps: {
-          label: 'PS'
+         postosaúde: {
+          label: 'P'
         },
         upa: {
           label:'U'

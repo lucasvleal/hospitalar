@@ -152,8 +152,8 @@
                                             <input name="cidade" type="text" class="form-control" id="inputCidadeCadastroPS" placeholder="Presidente Prudente">
                                         </div>
                                         <div class="form-group">
-                                            <label class="meuLabel" for="inputEstadoCadastroPS">Estado<span style="color: red;">*</span></label>
-                                            <input name="estado" type="text" class="form-control" id="inputEstadoCadastroPS" placeholder="São Paulo">
+                                            <label class="meuLabel" for="inputEstadoCadastroPS">UF<span style="color: red;">*</span></label>
+                                            <input name="estado" type="text" class="form-control" id="inputEstadoCadastroPS" placeholder="SP">
                                         </div>
                                         <div class="form-group">
                                             <label class="meuLabel" for="inputTipoCadastroPS">Tipo do PS<span style="color: red;">*</span></label>
@@ -166,9 +166,27 @@
                                         <div class="form-group">
                                             <label class="meuLabel" for="inputTempoMedCadastroPS">Tempo Médio de consulta<span style="color: red;">*</span></label>
                                             <input name="tempoMedio" type="text" class="form-control" id="inputTempoMedCadastroPS" placeholder="15">
-                                        </div>                            
+                                        </div>         
+
+                                        <div class="form-group">
+                                            <label class="meuLabel" for="inputParticular">Particular(1-Sim/0-Não) <span style="color: red;">*</span></label>
+                                            <input name="particular" type="text" class="form-control" id="inputParticular" placeholder="0 ou 1">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="meuLabel" for="inputLat">Latitude <span style="color: red;">*</span></label>
+                                            <input name="lat" type="text" class="form-control" id="inputLat" placeholder="22.423123">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="meuLabel" for="inputLong">Longitude <span style="color: red;">*</span></label>
+                                            <input name="long" type="text" class="form-control" id="inputLong" placeholder="54.123565">
+                                        </div>
+
                                         <p style="color: white;"><span style="color: red;">*</span> - Campo obrigatório</p>
-                
+            
+                                        
+
                                         <div class="d-flex justify-content-center">                        
                                             <button type="submit" class="btn">Adicionar</button>
                                         </div>
