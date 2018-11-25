@@ -30,7 +30,7 @@
 						<h6 >SELECIONE O TIPO DE ATENDIMENTO:</h6>
 						<div class="divRadios">
 							<div class="custom-control custom-radio">
-								<input type="radio" id="fila_ps*tempo_med_atend" name="customRadio" class="custom-control-input">
+								<input type="radio" id="fila_ps*tempo_med_atend" value="fila_ps*tempo_med_atend" name="customRadio" class="custom-control-input">
 								<label class="custom-control-label" for="fila_ps*tempo_med_atend">Menor tempo de consulta</label>
 							</div>
 						</div>
@@ -38,15 +38,15 @@
 						<h6 >SELECIONE O TIPO DE POSTO DE ATENDIMENTO:</h6>
 						<div class="divRadios">
 							<div class="custom-control custom-radio">
-								<input type="radio" id="hospital" name="customRadio2" class="custom-control-input">
+								<input type="radio" id="hospital" value="hospital" name="customRadio2" class="custom-control-input">
 								<label class="custom-control-label" for="hospital">Hospital</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="posto saúde" name="customRadio2" class="custom-control-input">
+								<input type="radio" id="posto saúde" value="posto saúde" name="customRadio2" class="custom-control-input">
 								<label class="custom-control-label" for="posto saúde">Posto de Saúde</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="upa" name="customRadio2" class="custom-control-input">
+								<input type="radio" id="upa" value="upa" name="customRadio2" class="custom-control-input">
 								<label class="custom-control-label" for="upa">UPA</label>
 							</div>
 						</div>
@@ -54,11 +54,11 @@
 						<h6 >SELECIONE O TIPO DO POSTO DE SAÚDE:</h6>
 						<div class="divRadios">
 							<div class="custom-control custom-radio">
-								<input type="radio" id="1" name="customRadio3" class="custom-control-input">
+								<input type="radio" id="1" value="1" name="customRadio3" class="custom-control-input">
 								<label class="custom-control-label" for="1">Particular</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="0" name="customRadio3" class="custom-control-input">
+								<input type="radio" id="0" value="2" name="customRadio3" class="custom-control-input">
 								<label class="custom-control-label" for="0">Público</label>
 							</div>
 						</div>
