@@ -90,15 +90,57 @@ input{
    font-size: 15px;    
 }
 
+th{
+	height: 30px;
+	text-align: center;
+	font-weight: bolder;
+	background-color: rgb(27, 54, 135);
+	color: white;
+}
+
+td{
+	height: 100px;
+	background-color: white;
+}
+
+th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
+	color: tomato;
+}
+
+
 
 /*--------------CLASSES-----------------*/
+.primaryColor-hover:hover{
+	color:#00bfff;
+}
+
+.primaryColor{
+	color:#00bfff;
+}
+
+.secundaryColor{
+	color: #1C3687;
+}
+
+.secundaryColor-hover:hover{
+	color:#1C3687;
+}
+
+.terciaryColor{
+	color: rgba(0,0,0,0.75);
+}
+
+.terciaryColor-hover:hover{
+	color: rgba(0,0,0,0.75);
+}
+
 .hpButton{
 	color: white;
 	border: 1px solid red;
 }
 
 .spanLar{
-	color: #0B2161;
+	color: #1C3687;
 	font-weight: bold;
 }
 
@@ -212,7 +254,7 @@ input{
 }
 
 .boxCadastro{
-	overflow: auto;
+	overflow: scroll;
 }
 
 .meuLabel{
@@ -233,28 +275,23 @@ input{
 .headerAdmin{
 	background-color: rgb(37, 37, 37);
 	height: 100px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.95);
 }
 
 .col-esq{
 	background-color: black;
-	height: 730px;
+	/* height: 730px; */
 }
 
 .col-dir{
-	background-color: rgba(0,0,0,0.4);
-	height: 730px;	
+	background-color: rgba(0,0,0,0.75);
+	/* height: 730px;	 */
 }
 
 .menuAdmin{		
-	padding: 10px;
-	transition: 0.3s;	
+	padding: 10px;		
 }
 
-.menuAdmin:hover{
-	/* box-shadow: 1px 1px 5px rgba(194, 220, 245,0.5); */
-	border-left: 5px solid rgba(236, 227, 227, 0.3);
-	transition: 0.3s;
-}
 
 .txtMenuAdmin{
 	font-size: 15px;
@@ -300,6 +337,44 @@ input{
 	border-radius: 5px;
 	transition: .2s;
 }
+
+.linkAdm{
+	text-align: center;	
+}
+
+.linkAdm:hover{
+	border-left: 5px solid rgba(236, 227, 227, 0.3);
+	transition: 0.3s;
+}
+
+.linkAdm:focus{
+	background-color: rgb(27, 54, 135);
+}
+
+.divErro{
+	display: none;
+}
+
+.containerAgenda{
+	margin-top: 80px;
+	padding: 20px 50px;
+}
+
+.hoje{
+	background-color: rgba(27, 54, 135,1.0);
+	color: white;
+	font-weight: bold;
+	box-shadow: -1px -2px 10px rgba(0,0,0,0.85);
+}
+
+.hoje:hover{
+	background-color: rgba(27, 54, 135,0.85);
+}
+
+.agenda{
+	box-shadow: 2px 5px 10px rgba(0,0,0,0.45);
+}
+
 
 /*----------------IDs-------------------*/
 #grad {

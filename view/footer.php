@@ -66,7 +66,7 @@
 
 <!-- Copyright -->
 <div class="footer-copyright text-center hpFooterBaixo hpTextFooter">© 2018 Copyright:
-  <a href="https://www.instagram.com/lealdad_/" target="_blank"> Lucas & Giovanni Coop.</a>
+  <a href="https://www.instagram.com/lealdad_/" target="_blank" class="terciaryColor-hover"> Lucas & Giovanni Coop.</a>
 </div>
 <!-- Copyright -->
 </footer>

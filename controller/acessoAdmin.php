@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 <body>
 <?php
@@ -13,7 +14,11 @@
     $total = mysqli_num_rows($autenticar);
 
     if($total == 0){
-        echo "Erro no login!!"; // <script>history.back();</script>";        
+        // echo "<script>alert(Erro no login!!);</script>";
+        
+        $erro = "<script>alert('Erro no Login'); </script>";
+        $_SESSION['msgErro'] = 0;        
+        header("Location: ../view/admin.php");         
     } else{
         $dados = mysqli_fetch_array($autenticar,MYSQLI_ASSOC);
         $autentica_email = explode('@',$email);        
