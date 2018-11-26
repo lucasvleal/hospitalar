@@ -18,7 +18,10 @@
     mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($link);
 
-    echo "Administrador cadastrado com sucesso!";
+    
+    header("Location: ../view/pagSuperAdmin.php");
+   
+    
 ?>
 </body>
 </html>

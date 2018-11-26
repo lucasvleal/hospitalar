@@ -361,6 +361,7 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 
 .divErro{
 	display: none;
+	margin: 15px;
 }
 
 .Weslley{
@@ -424,6 +425,10 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 @media (min-width: 320px) and (max-width: 767px){
 	.col-esq{
 		height: 250px;
+	}
+
+	.col-esqMobile{
+		height: 350px;
 	}
 
 	.hpTextFooter{
