@@ -1,5 +1,4 @@
-<?php require 'header.php'; ?>
-
+<?php require 'header.php';?>
      <!-- Container -->
      <div class="containerMeu ">
         <div class="row">
@@ -82,7 +81,7 @@
         </div>
      </div>
      <!-- /Container -->
-
+<?php if(isset($_SESSION['erroAcesso'])){ ?>
     <?php if($_SESSION['erroAcesso'] == 1) { ?>
             
             <script>
@@ -102,4 +101,5 @@
             </script>
             <?php $_SESSION['erroAcesso'] = 3;?>
     <?php } ?>
+<?php } ?>
 <?php require 'footer.php'; ?>

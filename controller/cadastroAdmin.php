@@ -13,8 +13,11 @@
     $senha = $_POST['senha'];
     $codPS = $_POST['codPS'];    
 
-    $sql = "INSERT INTO user_admin VALUES ";
-    $sql .= "('$email', '$senha', '$codPS')"; 
+    $email = "'$email'";
+    $senha = "'$senha'";
+    $codPS = "'$codPS'";
+
+    $sql = "call cadastrarAdmin($email, $senha, $codPS)";
     mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($link);
 

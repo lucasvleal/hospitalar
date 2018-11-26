@@ -16,12 +16,18 @@
     $nasc = $_POST['nasc'];
     $sexo = $_POST['sexo'];
 
+    $email = "'$email'";
+    $senha = "'$senha'";
+    $nome = "'$nome'";
+    $cpf = "'$cpf'";
+    $sexo = "'$sexo'";
+
     $array = explode('/',$nasc);
 
     $data = "$array[2]"."-"."$array[1]"."-"."$array[0]";
+    $data = "'$data'";
 
-    $sql = "INSERT INTO usuario VALUES ";
-    $sql .= "('$nome', '$cpf', '$data', '$sexo', '$email', '$senha')"; 
+    $sql = "call cadastrar($nome, $cpf, $data, $sexo, $email, $senha)";
     mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($link);
 

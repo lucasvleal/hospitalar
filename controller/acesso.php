@@ -34,6 +34,7 @@
             header("Location:../view/index.php");
         }
     }
+    
    
 ?>
 </body>

@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php
+    
 
     $link = mysqli_connect("localhost", "root", "", "hospitalar_web");
 
@@ -16,8 +17,15 @@
     $espec = $_POST['espec'];
     $codPS = $_POST['codPS'];
 
-    $sql = "INSERT INTO medico VALUES ";
-    $sql .= "('$nome', '$CRM', '$espec', '$codPS', '$email', '$senha')"; 
+    $email = "'$email'";
+    $senha = "'$senha'";
+    $nome = "'$nome'";
+    $CRM = "'$CRM'";
+    $espec = "'$espec'";
+    $codPS = "'$codPS'";
+
+    $sql = "call cadastrarMedico($nome, $CRM, $espec, $codPS, $email, $senha)";
+
     mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($link);
 
