@@ -361,6 +361,7 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 
 .divErro{
 	display: none;
+	margin: 15px;
 }
 
 .Weslley{
@@ -426,6 +427,10 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 		height: 250px;
 	}
 
+	.col-esqMobile{
+		height: 350px;
+	}
+
 	.hpTextFooter{
 		text-align: center;
 	}
@@ -448,5 +453,9 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 		background-color: rgba(236, 227, 227, 0.3);
 		border-radius: 10px;
 		padding-left: 10px;
+	}
+
+	.nomeMedico{
+		margin-top: 30px;
 	}
 }
