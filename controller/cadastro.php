@@ -30,9 +30,7 @@
     $sql = "call cadastrar($nome, $cpf, $data, $sexo, $email, $senha)";
     mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($link);
-
-    echo "Cliente cadastrado com sucesso!";
+header("Location: ../view/acesso.php")
 ?>
-<a href="../view/acesso.php"><br>Voltar</a>
 </body>
 </html>

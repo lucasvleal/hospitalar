@@ -13,7 +13,8 @@
       <h5 class="text-uppercase hpTextFooterUC">Achou algum bug?</h5>
       <p class="hpTextFooter">
       Por favor, entre em contato <br/> 
-      Email: lucasleal.dev@gmail.com
+      Email: lucasleal.dev@gmail.com<br/>
+      Email: giovanni.dev@gmail.com
         </p>
     </div>
     <!-- /grid column 1-->

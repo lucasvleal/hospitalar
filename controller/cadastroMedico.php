@@ -29,7 +29,7 @@
     mysqli_query($link,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($link);
 
-    echo "Médico cadastrado com sucesso!!";
 ?>
+<script>history.go(-1);</script>
 </body>
 </html>

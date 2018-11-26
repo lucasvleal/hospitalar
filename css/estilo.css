@@ -91,6 +91,7 @@ input{
    font-size: 15px;    
 }
 
+
 th{
 	height: 30px;
 	text-align: center;
@@ -117,6 +118,14 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 /*--------------CLASSES-----------------*/
 .primaryColor-hover:hover{
 	color:#00bfff;
+}
+
+.bolderolder{
+	font-weight: bold;
+}
+
+.sembold{
+	font-weight: 300;
 }
 
 .primaryColor{
@@ -242,6 +251,12 @@ th:nth-of-type(7),td:nth-of-type(7),th:nth-of-type(1),td:nth-of-type(1){
 .map{
 	margin: 15px 0px 15px 0px;
 	
+}
+
+.Redir{
+	color: white;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .btnBuscar{

@@ -1,5 +1,10 @@
 
-<?php require 'header.php'; ?>
+<?php require 'header.php';
+if(!isset($_SESSION)) 
+{ 
+	session_start(); 
+}  ?>
+
 
 	 <!-- Container -->
 	 <div class="containerMeu">
@@ -10,7 +15,8 @@
 			 	<h3 class="secundaryColor">Mapa de Rota</h3>
 	 			<div class="map">
 					<?php if(isset($_SESSION['org'])):?>
-					<?php require 'directmapexib.php'?>
+					<?php require 'directmapexib.php'; $pstnome = $_SESSION['pstnome']; $atend = $_SESSION['atend']; ?>
+					<div><h6 class = "sembold">Você está sendo redirecionado para <span class = "bolderolder"><?php echo $pstnome ?></span> e será atendido em até <span class = "bolderolder"><?php echo $atend;?> min!</span> </h6></div>
 					<?php else:?>		
 					<iframe src = "maps.php" style = "width:100%;height:450px; border:none;"></iframe>
 					<?php endif;?>					
@@ -42,8 +48,8 @@
 								<label class="custom-control-label" for="hospital">Hospital</label>
 							</div>
 							<div class="custom-control custom-radio">
-								<input type="radio" id="posto saúde" value="posto saúde" name="customRadio2" class="custom-control-input">
-								<label class="custom-control-label" for="posto saúde">Posto de Saúde</label>
+								<input type="radio" id="ps" value="ps" name="customRadio2" class="custom-control-input">
+								<label class="custom-control-label" for="ps">Posto de Saúde</label>
 							</div>
 							<div class="custom-control custom-radio">
 								<input type="radio" id="upa" value="upa" name="customRadio2" class="custom-control-input">

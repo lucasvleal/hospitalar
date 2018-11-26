@@ -30,9 +30,8 @@
     $sql = "INSERT INTO markers VALUES ('$codigo', '$nome', '$req', '$lat', '$long','$tipo');";
     mysqli_query($link, $sql) or die ("Erro ao tentar cadastrar registro marcador");
     mysqli_close($link);
-    echo "Posto cadastrado com sucesso!";
+    header("Location: ../view/pagSuperAdmin.php");
 ?>
 </body>
-<a href = '../view/pagSuperAdmin.php'>Voltar</a>
 
 </html>   
