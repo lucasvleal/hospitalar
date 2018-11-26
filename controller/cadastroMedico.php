@@ -1,4 +1,9 @@
 <html>
+<?php if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+?>
 <head>
     <title></title>
     <meta charset="utf-8">
@@ -10,12 +15,13 @@
 
     $link = mysqli_connect("localhost", "root", "", "hospitalar_web");
 
+
     $email = $_POST['login'];
     $senha = $_POST['senha'];
     $nome = $_POST['nome'];
     $CRM = $_POST['CRM'];
     $espec = $_POST['espec'];
-    $codPS = $_POST['codPS'];
+    $codPS = $_SESSION['codPS'];
 
     $email = "'$email'";
     $senha = "'$senha'";

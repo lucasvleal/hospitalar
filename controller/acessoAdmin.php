@@ -10,6 +10,7 @@
     $link = mysqli_connect("localhost", "root", "", "hospitalar_web");
 
     $email = $_POST['login'];
+    $_SESSION['emailAdm'] = $email;
     $senha = $_POST['senha'];
 
     $sql = "SELECT login,senha,cod_ps FROM user_admin WHERE login ='$email'  AND senha = '$senha' ";
@@ -19,8 +20,8 @@
 
     if($total == 0){
         
-        $_SESSION['msgErro'] = "VAI TOMA NO CU";        
-        header("Location: ../view/admin.php");         
+        $_SESSION['msgErro'] = "Deu erro";        
+        header("Location: ../view/admin.php");     
     } else{
         $dados = mysqli_fetch_array($autenticar,MYSQLI_ASSOC);
         $autentica_email = explode('@',$email);        

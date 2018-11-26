@@ -16,15 +16,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<!-- CDN Popper-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <!-- <script  type="text/javascript">
-    function bloqueio() {	
-        if (document.getElementById("divprincipal").style.display == "none") 	  {
-                       document.getElementById("divprincipal").style.display = "block";	  
-                    }	else	  {		  
-                        document.getElementById("divprincipal").style.display = "none";	  	  
-                    }  
-    }
-    </script> -->
+ 
     <script src="../js/bootstrap.js"></script>
 </head>
 <body>
@@ -43,7 +35,7 @@
     <div class="containerAdmin">
         <div class="row">
             <!-- coluna da esquerda -->
-            <div class="col-md-3 col-esq " >
+            <div class="col-md-3 col-esq col-esqMobile" >
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <div class="menuAdmin d-flex justify-content-center">
                         <img src="../imgs/icons8-adicionar-administrador-50.png">&nbsp;
@@ -83,7 +75,7 @@
                         <!--padrão-->
                         <div class="tab-pane fade boxCadastroMed active show "  role="tabpanel" style="height: 650px;">                               
                                 <h1 style="color:black;text-align:center;">Painel de Controle do <span class="secundaryColor">Super</span>Admin</h1>
-                                <h5 style="color:white;text-align:center;">Clique na opção desejada no menu à esquerda!</h5>                            
+                                <h5 style="color:white;text-align:center;">Clique na opção desejada no menu!</h5>                            
                         </div>
                         <!--/padrão-->
 
@@ -112,10 +104,10 @@
                                             <label class="meuLabel" for="inputEspCadastroMed">Especialização<span style="color: red;">*</span></label>
                                             <input name="espec" type="text" class="form-control" id="inputEspCadastroMed" aria-describedby="emailHelp" placeholder="Psiquiatra">
                                         </div>
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label class="meuLabel" for="inputCodPSCadastroMed">Código do Posto de Saúde que trabalha<span style="color: red;">*</span></label>
                                             <input name="codPS" type="text" class="form-control" id="inputCodPSCadastroMed" aria-describedby="emailHelp" placeholder="111">
-                                        </div>                            
+                                        </div>                             -->
                                         <p style="color: white;"><span style="color: red;">*</span> - Campo obrigatório</p>
                 
                                         <div class="d-flex justify-content-center">                        
